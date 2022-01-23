@@ -180,7 +180,7 @@ body {
 .auth-gallery-img:hover {
   width: 600px;
   height: 600px;
-  border-radius: 7px;
+  border-radius: 300px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   transform: translate(-100px, -100px);
 }
