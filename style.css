@@ -160,6 +160,13 @@ body {
 }
 
 .auth-gallery {
+  position: relative;
+  width: 400px;
+  height: 400px;
+}
+
+.auth-gallery-img {
+  position: absolute;
   width: 400px;
   height: 400px;
   background-image: url("img/cat.jpg");
@@ -167,6 +174,15 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 7px 0 0 7px;
+  transition: all 0.5s ease-in-out;
+}
+
+.auth-gallery-img:hover {
+  width: 600px;
+  height: 600px;
+  border-radius: 7px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transform: translate(-100px, -100px);
 }
 
 .auth-form {
