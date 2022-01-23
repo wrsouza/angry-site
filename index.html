@@ -27,8 +27,35 @@
       </div>
       <div class="buttons">
         <button class="btn signup">SignUp</button>
-        <button class="btn signin">SignIn</button>
+        <button onclick="openModal()" class="btn signin">SignIn</button>
       </div>
     </div>
+    <div class="gallery"></div>
+    <div id="modal" class="modal">
+      <div onclick="closeModal()" class="modal-bg"></div>
+      <div class="auth">
+        <div class="auth-gallery"></div>
+        <div class="auth-form">
+          <div class="auth-logo">
+            <span class="auth-logo-icon">
+              <i class="far fa-angry"></i>
+            </span>
+            <span class="auth-logo-text">Angry</span>
+          </div>
+          <span class="auth-text">Enter with your E-mail and Password</span>
+          <div class="form-group">
+            <label>Email</label>
+            <input type="text" />
+          </div>
+          <div class="form-group">
+            <label>Password</label>
+            <input type="password" />
+          </div>
+          <button onclick="closeModal()" class="btn enter">Enter</button>
+          <a href="#" class="btn signup">SignUp</a>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
   </body>
 </html>
